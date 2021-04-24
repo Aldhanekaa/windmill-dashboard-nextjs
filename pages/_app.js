@@ -1,7 +1,56 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+
+import { DefaultSeo } from 'next-seo';
+import Head from 'next/head';
+import { AppProps } from 'next/app';
+import React, { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta name='viewport' content='width=device-width,initial-scale=1' />
+        {/* <meta
+          name='google-site-verification'
+          content={
+            gtag.GOOGLE_VERIF || '-yo'
+          }
+        /> */}
+
+        <meta name='yandex-verification' content='356dad746d43cc34' />
+
+        <meta name='theme-color' content='#f0efeb' />
+
+        <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel='icon' type='image/png' href='/favicon.png'></link>
+
+        <title>Madrasah Tsanawiyah Techno Natura Depok</title>
+        <meta
+          name='description'
+          content='Website Madrasah Tsanawiyah Techno Natura'
+        />
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css'
+        />
+      </Head>
+
+      <style jsx global>{`
+        html {
+          font-family: 'Roboto', sans-serif;
+          scroll-behavior: smooth;
+          scroll-behavior: smooth;
+        }
+      `}</style>
+
+      <DefaultSeo />
+      {/* <ProgressLoad /> */}
+
+      <Component {...pageProps} />
+
+      {/* <Footer /> */}
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
