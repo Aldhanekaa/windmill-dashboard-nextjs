@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const windmill = require('@windmill/react-ui/config');
 
 module.exports = windmill({
-  purge: ['src/**/*.js'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -13,5 +13,11 @@ module.exports = windmill({
           '0 5px 6px -7px rgba(0, 0, 0, 0.6), 0 2px 4px -5px rgba(0, 0, 0, 0.06)',
       },
     },
+  },
+  variants: {
+    scale: ['responsive', 'hover', 'focus', 'group-hover'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
 });

@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
 
 import { DefaultSeo } from 'next-seo';
 import Head from 'next/head';
@@ -24,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         <link rel='icon' type='image/x-icon' href='/favicon.ico' />
         <link rel='icon' type='image/png' href='/favicon.png'></link>
 
-        <title>Madrasah Tsanawiyah Techno Natura Depok</title>
+        <title>Nextjs Windmill Dashboard</title>
         <meta
           name='description'
           content='Website Madrasah Tsanawiyah Techno Natura'

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "tailwind:dev": "tailwindcss build styles/globals.css -o styles/tailwind.output.css"
   },
   "dependencies": {
     "@windmill/react-ui": "^0.5.1",
