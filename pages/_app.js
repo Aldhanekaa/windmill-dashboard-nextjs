@@ -5,6 +5,8 @@ import { DefaultSeo } from 'next-seo';
 import Head from 'next/head';
 import ProgressLoad from 'components/ProgressLoad';
 import React, { useEffect } from 'react';
+import { SidebarProvider } from 'context/SidebarContext';
+import { Windmill } from '@windmill/react-ui';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -47,8 +49,12 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo />
       {/* <ProgressLoad /> */}
 
-      <ProgressLoad />
-      <Component {...pageProps} />
+      <SidebarProvider>
+        <ProgressLoad />
+        <Windmill>
+          <Component {...pageProps} />
+        </Windmill>
+      </SidebarProvider>
 
       {/* <Footer /> */}
     </>
