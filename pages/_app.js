@@ -51,9 +51,9 @@ function MyApp({ Component, pageProps }) {
 
       <SidebarProvider>
         <ProgressLoad />
-        <Windmill>
-          <Component {...pageProps} />
-        </Windmill>
+        {/* <Windmill> */}
+        <Component {...pageProps} />
+        {/* </Windmill> */}
       </SidebarProvider>
 
       {/* <Footer /> */}
