@@ -196,3 +196,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ---
 
 windmill dashboard for nextjs, created by Aldhanekaa
+I recommend you to use this template with chakra-ui, because some components look different than the react template.
