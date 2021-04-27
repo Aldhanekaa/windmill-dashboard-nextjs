@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css';
 
 import { DefaultSeo } from 'next-seo';
 import Head from 'next/head';
-import { AppProps } from 'next/app';
+import ProgressLoad from 'components/ProgressLoad';
 import React, { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -47,6 +47,7 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo />
       {/* <ProgressLoad /> */}
 
+      <ProgressLoad />
       <Component {...pageProps} />
 
       {/* <Footer /> */}
