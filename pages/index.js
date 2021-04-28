@@ -35,12 +35,9 @@ export default function Home() {
             </a>
           </Link>
 
-          <a
-            href='https://github.com/vercel/next.js/tree/master/examples'
-            className={styles.card}
-          >
+          <a href='/app' className={styles.card}>
             <h3>App Page &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Discover the windmill dashboard</p>
           </a>
 
           <a

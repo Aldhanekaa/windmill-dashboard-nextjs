@@ -1,11 +1,11 @@
 <p align="center">
-    <a href="https://windmillui.com/dashboard-react">
+    <a href="https://windmill-dashboard-nextjs.vercel.app/app">
       <img alt="Windmill Dashboard React" width="600" src=".github/windmill-dashboard-react.png">
     </a><br>
     Four 100 scores and PWA ready. Just connect your data.
 </p>
 
-🚀 [See it live](https://windmillui.com/dashboard-react)
+🚀 [See it live](https://windmill-dashboard-nextjs.vercel.app/app)
 
 This is not a template. This is a complete application, built on top of React, with all tiny details taken care of so you just need to bring the data to feed it.
 
@@ -19,7 +19,6 @@ Accessibility is a priority in my projects and I think it should be in yours too
 - ⚡ Code splitting
 - Tailwind CSS
 - [Windmill React UI](https://windmillui.com/react-ui)
-- React Router
 - Heroicons
 - Chart.js
 - PWA delivering offline-first and app-like experience
@@ -32,7 +31,7 @@ Windmill Dashboard React is built on top of [Windmill React UI](https://windmill
 
 ### Routing
 
-Routes in Windmill Dashboard are separated into two categories, sidebar ([routes/sidebar.js](src/routes/sidebar.js)) and general ([routes/index.js](src/routes/index.js)).
+Routes in Windmill Dashboard are separated into two categories, sidebar ([routes/sidebar.js](src/routes/sidebar.js)) and general ([pages](pages)).
 
 #### Sidebar routes
 
@@ -75,22 +74,11 @@ If you want to add a route to, let's say, a landing page, you should add it to t
 #### How to add a new page to router?
 
 1. Create your page inside `src/pages`, say `MyPage.js`;
-2. Add it to the global router (`src/routes/index.js`)
+2. Add it to the global router (`pages/index.js`)
 
-```js
-const MyPage = lazy(() => import('../pages/MyPage'));
-```
+Then add it to the pages folder
 
-Then add it to the `routes` array:
-
-```js
-{
-  path: '/my-page', // the url that will be added to /app/
-  component: MyPage, // the page component you jsut imported
-}
-```
-
-3. If you want to make this page accessible from the sidebar, you have to options:
+3. If you want to make this page accessible from the sidebar, you have two options:
 
 - add it to the root `routes` array
 
@@ -116,11 +104,7 @@ Then add it to the `routes` array:
     },
 ```
 
-If you're asking where does this `/app` come from, it is from this line inside `src/App.js`, that renders the app:
-
-```jsx
-<Route path='/app' component={Layout} />
-```
+If you're asking where does this `/app` come from, it is from this line inside `pages/_app.js` and `pages/_document.js`, that renders the app
 
 ---
 
