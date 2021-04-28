@@ -6,7 +6,7 @@ function Sidebar() {
   return (
     <>
       <DesktopSidebar />
-      {/* <MobileSidebar /> */}
+      <MobileSidebar />
     </>
   );
 }

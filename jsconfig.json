@@ -4,7 +4,8 @@
     "paths": {
       "utils/*": ["./utils/*"],
       "components/*": ["./components/*"],
-      "context/*": ["./context/*"]
+      "context/*": ["./context/*"],
+      "icons/*": ["./icons/*"]
     }
   }
 }

@@ -49,6 +49,16 @@ const nextConfig = {
       },
     ];
   },
+  future: {
+    webpack5: true,
+  },
+  webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack', 'url-loader'],
+    });
+    return config;
+  },
   env,
 };
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 // import { GithubIcon, TwitterIcon } from '../icons';
 import { Label, Input, Button } from '@windmill/react-ui';
+import { GithubIcon, TwitterIcon } from 'icons';
 
 export default function loginPage() {
   return (
@@ -55,11 +56,11 @@ export default function loginPage() {
               <hr className='my-8' />
 
               <Button block layout='outline'>
-                {/* <GithubIcon className='w-4 h-4 mr-2' aria-hidden='true' /> */}
+                <GithubIcon className='w-4 h-4 mr-2' aria-hidden='true' />
                 Github
               </Button>
               <Button className='mt-4' block layout='outline'>
-                {/* <TwitterIcon className='w-4 h-4 mr-2' aria-hidden='true' /> */}
+                <TwitterIcon className='w-4 h-4 mr-2' aria-hidden='true' />
                 Twitter
               </Button>
 
