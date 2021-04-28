@@ -7,9 +7,9 @@
  */
 const routes = [
   {
-    path: '/app/dashboard', // the url
+    path: '/app', // the url
     icon: 'HomeIcon', // the component being exported from icons/index.js
-    name: 'Dashboard', // name that appear in Sidebar
+    name: 'Home', // name that appear in Sidebar
   },
   {
     path: '/app/forms',
@@ -68,6 +68,6 @@ const routes = [
       },
     ],
   },
-]
+];
 
-export default routes
+export default routes;

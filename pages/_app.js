@@ -6,7 +6,7 @@ import Head from 'next/head';
 import ProgressLoad from 'components/ProgressLoad';
 import React, { useEffect } from 'react';
 import { SidebarProvider } from 'context/SidebarContext';
-import { Windmill } from '@windmill/react-ui';
+import Navbar from 'components/Navbar';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -50,10 +50,12 @@ function MyApp({ Component, pageProps }) {
       {/* <ProgressLoad /> */}
 
       <SidebarProvider>
-        <ProgressLoad />
-        {/* <Windmill> */}
-        <Component {...pageProps} />
-        {/* </Windmill> */}
+        <Navbar>
+          <ProgressLoad />
+          {/* <Windmill> */}
+          <Component {...pageProps} />
+          {/* </Windmill> */}
+        </Navbar>
       </SidebarProvider>
 
       {/* <Footer /> */}
