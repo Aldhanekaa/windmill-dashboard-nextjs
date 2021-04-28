@@ -6,6 +6,8 @@ import Head from 'next/head';
 import ProgressLoad from 'components/ProgressLoad';
 import React, { useEffect } from 'react';
 import { SidebarProvider } from 'context/SidebarContext';
+import { ThemeProvider } from 'context/ThemeContext';
+
 import Navbar from 'components/Navbar';
 import { Windmill } from '@windmill/react-ui';
 
@@ -48,7 +50,7 @@ function MyApp({ Component, pageProps }) {
       `}</style>
 
       <DefaultSeo />
-      {/* <ProgressLoad /> */}
+      {/* <ThemeProvider> */}
       <SidebarProvider>
         <Windmill usePreferences={true}>
           <Navbar>
@@ -57,8 +59,7 @@ function MyApp({ Component, pageProps }) {
           </Navbar>
         </Windmill>
       </SidebarProvider>
-
-      {/* <Footer /> */}
+      {/* </ThemeProvider> */}
     </>
   );
 }

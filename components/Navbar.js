@@ -21,10 +21,9 @@ export default function NavbarComponent({ children }) {
           isSidebarOpen && 'overflow-hidden'
         }`}
       >
-        <Sidebar></Sidebar>
-
-        <div className='flex flex-col flex-1 w-full py-10 px-7 overflow-y-auto	'>
-          {/* <Header /> */}
+        <Sidebar />
+        <div className='flex flex-col flex-1 w-full overflow-y-auto	'>
+          <Header />
           <>{children}</>
         </div>
       </div>

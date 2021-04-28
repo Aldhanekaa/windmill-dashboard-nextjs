@@ -50,7 +50,7 @@ function Dashboard() {
   }, [page]);
 
   return (
-    <>
+    <div className='md:px-8 sm:px-20'>
       <PageTitle>Dashboard</PageTitle>
 
       <CTA />
@@ -106,7 +106,7 @@ function Dashboard() {
           <ChartLegend legends={lineLegends} />
         </ChartCard>
       </div>
-    </>
+    </div>
   );
 }
 
