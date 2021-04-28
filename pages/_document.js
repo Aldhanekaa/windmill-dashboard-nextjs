@@ -40,8 +40,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='theme-color' content='#FFFFFF' />
-          {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
-          {/* <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' /> */}
 
           <link
             rel='apple-touch-icon'
@@ -51,33 +49,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <link rel='manifest' href='/manifest.json' />
           <link rel='shortcut icon' href='/favicon.ico' />
 
-          {/* <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          /> */}
-          {/* <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}', {
-                  page_path: window.location.pathname,
-                });
-              `,
-            }}
-          /> */}
-
           <meta
             name='keywords'
             content='windmill dashboard nextjs,windmill dashboard,windmill ui'
           />
           <meta name='geo.region' content='ID' />
-          <meta name='geo.placename' content='Depok, Jawa Barat, Indonesia.' />
-          <link rel='shortlink' href={process.env.PUBLIC_URL} />
-          <link rel='canonical' href={process.env.PUBLIC_URL} />
+          <meta name='geo.placename' content='Depok, West Java, Indonesia.' />
+          <link
+            rel='shortlink'
+            href='https://windmill-dashboard-nextjs.vercel.app/'
+          />
+          <link
+            rel='canonical'
+            href='https://windmill-dashboard-nextjs.vercel.app/'
+          />
 
-          <meta name='og:url' content={process.env.PUBLIC_URL} />
+          <meta
+            name='og:url'
+            content='https://windmill-dashboard-nextjs.vercel.app/'
+          />
           <meta name='og:type' content='website' />
 
           <meta name='og:image' content='/open-graph/og-img-small.png' />
@@ -96,7 +86,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <meta property='og:image:height' content='512' />
           <meta property='og:site_name' content='Windmill Dashboard' />
 
-          <meta name='cannonical' content={process.env.PUBLIC_URL} />
+          <meta
+            name='cannonical'
+            content='https://windmill-dashboard-nextjs.vercel.app/'
+          />
 
           <link
             rel='stylesheet'
